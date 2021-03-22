@@ -17,8 +17,4 @@ func TestBlock_GetTotalTransactions(t *testing.T) {
 	assert.Equal(t, expectedTransactionsOfBlock,block.GetTotalTransactions())
 }
 
-//func TestBlock_GetTotalAmount(t *testing.T) {
-//	expectedAmountOfBlock,_ := new(big.Float).SetString("1130.987085446826418822")
-//	block := models.GetBlockByNumber(11508993)
-//	assert.Equal(t, expectedAmountOfBlock,block.GetTotalAmount())
-//}
+

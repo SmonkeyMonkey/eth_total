@@ -35,7 +35,7 @@ func(c *CustomRequest) encodeTag(tag int){
 }
 // parsed config.toml file and write API key to field APIKey
 func (c *CustomRequest) setAPIKey() {
-	if _, err := toml.DecodeFile("./config.toml", &c); err != nil {
+	if _, err := toml.DecodeFile("config.toml", &c); err != nil {
 		log.Error(err)
 	}
 }
